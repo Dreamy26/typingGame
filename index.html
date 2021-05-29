@@ -1,27 +1,30 @@
-<!-- inside index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Typing game</title>
+    <title>Typing Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>   
   <main class="container">
-    <section>
-      <h1>Typing game!</h1>
+      <section>
+      <h1>Typing Game!</h1>
       <div class="typing-game">
   <p>
     "Practice your typing skills with a quote from Sherlock Holmes. Click <span>start</span> "to begin!" 
   </p>
-  <p id="quote"></p> <!-- This will display our quote -->
+  <p id="quote"></p> <!-- This will display the quote -->
   <p id="message"></p> <!-- This will display any status messages -->
-  <div>
-    <input type="text" aria-label="current word" id="typed-value" /> <!-- The textbox for typing -->
-    <button type="button" id="start">Start</button> <!-- To start the game -->
+  
+    <div class="start-game">
+      <textarea type="text" aria-label="current word" id="typed-value"></textarea> <!-- The textbox for typing -->
+      <button type="button" id="start" >Start</button> <!-- To start the game -->
+    </div>
   </div>
+  </section>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
