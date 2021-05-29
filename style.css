@@ -1,6 +1,6 @@
 /* inside style.css */
 .highlight {
-    background-color: yellow;
+    background-color: plum;
 }
 .error {
     background-color: lightcoral;
@@ -13,4 +13,9 @@ h1 {
 }
 p {
     color: peru;
+}
+
+button
+{
+cursor: pointer;
 }
