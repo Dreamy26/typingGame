@@ -6,16 +6,21 @@
     background-color: lightcoral;
     border: red;
 }
+/*-----------------------------h1 & p Style-----------------------------*/
 h1 {
     color: blue;
     font-family: lucida ;
     font-size: 160%;
 }
+
 p {
     color: peru;
 }
-
-button
-{
+/*---------------------------Button Style---------------------------*/
+button {
 cursor: pointer;
 }
+
+button:hover {
+    background-color: #f7c2f9;
+  }
