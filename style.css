@@ -1,24 +1,48 @@
 /* inside style.css */
+body {
+    background-color: rgb(202, 216, 242) 
+}
+
 .highlight {
     background-color: plum;
 }
+
 .error {
-    background-color: lightcoral;
+    background-color: rgb(244, 204, 204);
     border: red;
+}
+.typing-game {
+    color: blueviolet;
+}
+.container {
+    justify-content: center; 
 }
 /*-----------------------------h1 & p Style-----------------------------*/
 h1 {
+   
     color: blue;
     font-family: lucida ;
     font-size: 160%;
+    text-align: center;
 }
 
+
 p {
-    color: peru;
+    
+   
+    text-align: center;
+}
+#qoute, #message {
+    color: black;
+    
 }
 /*---------------------------Button Style---------------------------*/
+
 button {
 cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.9s;
 }
 
 button:hover {

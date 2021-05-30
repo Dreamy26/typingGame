@@ -8,7 +8,7 @@ const quotes = [
     'Nothing clears up a case so much as stating it to another person.',
     'Education never ends, Watson. It is a series of lessons, with the greatest for the last.',
   ];
-  // store the list of words and the index of the word the player is currently typing
+  // index of the word the player is currently typing
   let words = [];
   let wordIndex = 0;
   // the starting time
@@ -17,17 +17,20 @@ const quotes = [
   const quoteElement = document.getElementById('quote');
   const messageElement = document.getElementById('message');
   const typedValueElement = document.getElementById('typed-value');
-  // at the end of script.js
+ 
+
+
   document.getElementById('start').addEventListener('click', () => {
     // get a quote
     const quoteIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[quoteIndex];
-    // Put the quote into an array of words
+    // The quote is an array of words
     words = quote.split(' ');
-    // reset the word index for tracking
+    // tracking the word index
     wordIndex = 0;
+
     // UI updates
-    // Create an array of span elements so we can set a class
+    // A Create an array of span elements so we can set a class
     const spanWords = words.map(function(word) { return `<span>${word} </span>`});
     // Convert into string and set as innerHTML on quote display
     quoteElement.innerHTML = spanWords.join('');
