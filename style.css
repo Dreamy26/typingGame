@@ -1,6 +1,6 @@
 /* inside style.css */
 body {
-    background-color: rgb(202, 216, 242) 
+    background-color: rgb(201, 211, 230) 
 }
 
 .highlight {
@@ -12,17 +12,28 @@ body {
     border: red;
 }
 .typing-game {
-    color: blueviolet;
+    color: rgb(126, 36, 211);
 }
 .container {
-    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+   
+}
+.container > section {
+     
+}
+
+.start-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*-----------------------------h1 & p Style-----------------------------*/
 h1 {
    
     color: blue;
     font-family: lucida ;
-    font-size: 160%;
+    font-size: 250%;
     text-align: center;
 }
 
