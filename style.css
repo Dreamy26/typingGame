@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 65px;
-   
+   @media only screen and (max-width:950px){display: inline;}
 }
 .container > section {
      margin: ;
@@ -76,3 +76,10 @@ padding: 4px 4px;
 button:hover {
     background-color: #fcdafc;
   }
+
+  //--Creating A 2 Section Split Footer
+#footer-sections {display: flex;}
+#footer-sections  .page-section:nth-child(1),
+#footer-sections  .page-section:nth-child(2)
+{flex: 1; display: flex; flex-flow: row nowrap; justify-content: center;}
+@media only screen and (max-width:950px){#footer-sections {display: inline;}}
