@@ -1,6 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Yellowtail&display=swap');
+
 /* inside style.css */
 body {
-    background-color: rgb(201, 211, 230) 
+    background-color: rgb(159, 179, 216) 
 }
 
 .highlight {
@@ -17,10 +20,11 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    padding: 65px;
    
 }
 .container > section {
-     
+     margin: ;
 }
 
 .start-game {
@@ -28,34 +32,47 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
 /*-----------------------------h1 & p Style-----------------------------*/
 h1 {
    
-    color: blue;
-    font-family: lucida ;
-    font-size: 250%;
+    color: rgb(64, 154, 151);
+    font-family: yellowtail; ;
+    font-size: 55px;
     text-align: center;
+    
+    margin-bottom: 40px;
 }
 
 
 p {
-    
-   
+
     text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 40px;
 }
 #qoute, #message {
-    color: black;
-    
+    color: rgb(241, 211, 152);
+    font-family: 'Libre Baskerville', serif;
 }
 /*---------------------------Button Style---------------------------*/
 
 button {
+color: rgb(126, 36, 211);
 cursor: pointer;
+border-radius: 5px;
 display: inline-block;
+font-family: 'Libre Baskerville', serif;
 position: relative;
 transition: 0.9s;
+border: 2px transparent yellow ;
+padding: 4px 4px;
 }
 
 button:hover {
-    background-color: #f7c2f9;
+    background-color: #fcdafc;
   }

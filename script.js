@@ -55,9 +55,10 @@ const quotes = [
     const typedValue = typedValueElement.value;
     if (typedValue === currentWord && wordIndex === words.length - 1) {
       // end of sentence
+      
       // Display success
       const elapsedTime = new Date().getTime() - startTime;
-      const message = `CONGRATULATIONS! You finished in ${elapsedTime / 1000} seconds.`;
+      const message = `🎉 You finished in ${elapsedTime / 1000} seconds.`;
       messageElement.innerText = message;
     } else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord) {
       // end of word
