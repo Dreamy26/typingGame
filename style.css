@@ -82,4 +82,4 @@ button:hover {
 #footer-sections  .page-section:nth-child(1),
 #footer-sections  .page-section:nth-child(2)
 {flex: 1; display: flex; flex-flow: row nowrap; justify-content: center;}
-@media only screen and (max-width:950px){#footer-sections {display: inline;}}
+@media only screen and (max-width:926px){#footer-sections {display: inline;}}
