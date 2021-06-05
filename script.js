@@ -1,8 +1,7 @@
-// all of the quotes
+// the quotes
 const quotes = [
     'When you have eliminated the impossible, whatever remains, however improbable, must be the truth.',
     'There is nothing more deceptive than an obvious fact.',
-    'I ought to know by this time that when a fact appears to be opposed to a long train of deductions it invariably proves to be capable of bearing some other interpretation.',
     'I never make exceptions. An exception disproves the rule.',
     'What one man can invent another can discover.',
     'Nothing clears up a case so much as stating it to another person.',
@@ -11,7 +10,7 @@ const quotes = [
   // index of the word the player is currently typing
   let words = [];
   let wordIndex = 0;
-  // the starting time
+  // the starting time  -- will not be displayed to player
   let startTime = Date.now();
   // page elements
   const quoteElement = document.getElementById('quote');
@@ -30,7 +29,7 @@ const quotes = [
     wordIndex = 0;
 
     // UI updates
-    // A Create an array of span elements so we can set a class
+    // an array of span elements to set a class
     const spanWords = words.map(function(word) { return `<span>${word} </span>`});
     // Convert into string and set as innerHTML on quote display
     quoteElement.innerHTML = spanWords.join('');
@@ -47,7 +46,7 @@ const quotes = [
     // Start the timer
     startTime = new Date().getTime();
   });
-  // at the end of script.js
+
   typedValueElement.addEventListener('input', () => {
     // Get the current word
     const currentWord = words[wordIndex];
